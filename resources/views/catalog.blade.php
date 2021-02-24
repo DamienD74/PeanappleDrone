@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+@extends('layout')
 
-</body>
-</html>
+@section('content')
+    <div>
+        <div>
+            <h1>Coucou</h1>
+        </div>
+    </div>
+@endsection
