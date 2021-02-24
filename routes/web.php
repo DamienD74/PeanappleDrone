@@ -19,3 +19,7 @@ use App\Http\Controllers\Panier;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/footer', function () {
+    return view('footer');
+});
