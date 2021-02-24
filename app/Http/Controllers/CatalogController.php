@@ -4,7 +4,10 @@
 namespace App\Http\Controllers;
 
 
-class Catalogue
+class CatalogController extends Controller
 {
-
+    public function catalogue()
+    {
+        return view('catalog');
+    }
 }

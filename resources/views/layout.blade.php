@@ -5,9 +5,9 @@
     <title>@yield('Titre')</title>
 </head>
 <body>
-@yield('layout')
+@yield('content')
 
 
-
+@extends('footer')
 </body>
 </html>
