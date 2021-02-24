@@ -1,0 +1,45 @@
+html{
+    font-size: 1px;
+}
+
+footer{
+    background-color: black;
+}
+
+.textF{
+    font-size: 10rem;
+    font-family: Ubuntu, serif;
+    color: white;
+}
+
+.titleF{
+    font-size: 20rem;
+    font-family: Ubuntu, serif;
+    font-weight: bold;
+    color: white;
+}
+
+.enteteF{
+    padding-top: 50rem;
+}
+
+.mentionF{
+    margin-top: 50rem;
+}
+
+.blockLien{
+    margin-top: 20rem;
+}
+
+.lienF{
+    margin-top: 10rem;
+}
+
+.iconeF{
+    margin-top: 50rem;
+}
+
+.copyrightF{
+    margin-top: 50rem;
+    padding-bottom: 50rem;
+}
