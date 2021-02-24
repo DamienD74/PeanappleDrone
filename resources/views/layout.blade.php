@@ -8,6 +8,6 @@
 @yield('content')
 
 
-
+@extends('footer')
 </body>
 </html>
