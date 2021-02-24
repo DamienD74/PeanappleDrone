@@ -21,3 +21,7 @@ Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalog
 Route::get('/footer', function () {
     return view('footer');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});

@@ -1,0 +1,18 @@
+html{
+    font-size: 1px;
+}
+
+body{
+
+}
+
+.fondCO{
+    background-color: #dddddd;
+}
+
+.textCO{
+    font-size: 25rem;
+    font-family: Ubuntu, serif;
+    font-style: italic;
+    color: black;
+}

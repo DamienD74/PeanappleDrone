@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
 @extends('layout')
 
 <div class="fondCO">
@@ -35,5 +28,3 @@
         Nouvelle utilisateur ?
     </div>
 </div>
-</body>
-</html>
