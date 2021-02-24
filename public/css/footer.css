@@ -3,6 +3,7 @@ html{
 }
 
 footer{
+    text-align: center;
     background-color: black;
 }
 
@@ -21,6 +22,8 @@ footer{
 
 .enteteF{
     padding-top: 50rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
 }
 
 .mentionF{
@@ -28,6 +31,8 @@ footer{
 }
 
 .blockLien{
+    list-style-type:none;
+    padding-left: 0rem;
     margin-top: 20rem;
 }
 
@@ -35,8 +40,12 @@ footer{
     margin-top: 10rem;
 }
 
-.iconeF{
+.blockIconeF{
     margin-top: 50rem;
+}
+
+.iconeF{
+    padding-right: 50rem;
 }
 
 .copyrightF{
