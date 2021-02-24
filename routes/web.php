@@ -22,7 +22,10 @@ Route::get('/footer', function () {
     return view('footer');
 });
 
-
 Route::get('/cart', function () {
-    return view('cart');
+    return view('cart');});
+
+    Route::get('/contact', function () {
+    return view('contact');
+
 });
