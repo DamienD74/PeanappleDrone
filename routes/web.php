@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Produit;
-use App\Http\Controllers\Acceuil;
-use App\Http\Controllers\Panier;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +17,10 @@ use App\Http\Controllers\Panier;
 |
 */
 Route::get('/', function () {
-    return view('welcome');
+    return view('products');
+});
+Route::get('/home', function () {
+    return view('home');
 });
 
 Route::get('/footer', function () {
