@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+
 
 use App\Http\Controllers\Produit;
 use App\Http\Controllers\Acceuil;
@@ -19,7 +19,14 @@ use App\Http\Controllers\Panier;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', function () {
+    return view('home');
 
+});
+
+Route::get('/layout', function () {
+    return view('layout');
+});
 Route::get('/footer', function () {
     return view('footer');
 });
