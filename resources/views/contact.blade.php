@@ -9,9 +9,9 @@
     </div>
     <div>
         <div class="textCO">
-            nom d'utilisateur ou email
+            Nom d'utilisateur ou email
         </div>
-        <input class="champText" type="text" id="name" name="name" required
+        <input class="champText" type="text" id="userName" name="userName" required
                minlength="1" maxlength="35" size="20">
     </div>
     <div>
