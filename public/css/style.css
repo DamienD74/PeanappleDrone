@@ -7,7 +7,16 @@ html{
 /*Body*/
 
 body{
-    margin: auto;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Header*/
+
+header {
+    background-color: black;
 }
 
 /*Contact*/
@@ -55,6 +64,59 @@ body{
     padding-bottom: 20rem;
     padding-right: 15rem;
 }
+
+
+
+
+/* ********************  CART MAIN CONTENT  ************************ */
+
+
+
+/* *****************  MAIN  ********************* */
+
+#cart_main{
+
+    font-size: 10rem;
+}
+
+
+/* ***************** CART_ARTICLE ********************* */
+
+.cart_article {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cart_content{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.article_image{
+
+}
+
+.article_description{
+
+}
+
+.quantifier{
+
+}
+
+.price{
+
+}
+
+.article_image img{
+    height: 80rem;
+    width: 150rem;
+}
+
+
+
 
 /*Footer*/
 
