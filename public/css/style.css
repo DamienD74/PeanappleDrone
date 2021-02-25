@@ -209,21 +209,22 @@ footer{
 .Catimg {
     height: 200rem;
     width: 300rem;
-    padding-left: 50rem;
+
 }
 .BgDivCat {
     background-color: #414040;
-
+    text-align: center;
 }
 .textCatH3 {
+    font-family: Ubuntu, serif;
     font-size: 25rem;
     color: #dddddd;
     opacity: 50%;
     text-align: center;
 }.textCat {
+     font-family: Ubuntu, serif;
      font-size: 25rem;
      color: #dddddd;
-     text-align: center;
  }
 .Catlign {
     background-color: #dddddd;
