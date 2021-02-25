@@ -1,24 +1,21 @@
-
-@section('header')
+<div class="header">
 <h1>Pineapple Drone</h1>
-<img src="{{assert('/image_acceuil/Icone.png')}}" alt="logo" width="80" height="80">
-<div class="topnav">
-    <label>
-        <input type="text" placeholder="Search..">
-    </label>
-</div>
-<div id="webapp_cover">
-    <div id="menu_button">
-        <input type="checkbox" id="menu_checkbox">
-        <label for="menu_checkbox" id="menu_label">
-            <div id="menu_text_bar">Menu</div>
-        </label>
+<nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" type="button">Something else here</button>
     </div>
 </div>
-<div class="User"><img src="{{assert('resources/img/user.svg')}}" alt="logo" width="60" height="60"> </div>
-<div class="Cart"><img src="{{assert('resources/img/list-interface-symbol.svg')}}" alt="logo" width="60" height="60"> </div>
-@stop
-
-@extends('layout')
+</div>
 
 

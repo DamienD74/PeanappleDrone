@@ -19,7 +19,9 @@ use App\Http\Controllers\Panier;
 Route::get('/', function () {
     return view('home');
 });
-
+Route::get('/head', function () {
+    return view('header');
+});
 Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalogue']);
 
 Route::get('/footer', function () {
