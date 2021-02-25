@@ -10,7 +10,9 @@
 <header>
     @include('header')
 </header>
-@yield('content')
+<main>
+    @yield('content')
+</main>
 <footer>
     @include('footer')
 </footer>

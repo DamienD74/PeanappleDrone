@@ -9,14 +9,33 @@ html{
 body{
     margin: 0;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
 }
 
 /*Header*/
 
 header {
     background-color: black;
+    font-size: 20rem;
+}
+
+.logoH{
+    width: 66rem;
+    height: 54rem;
+}
+
+.titleH{
+    color: #dddddd;
+    font-size: 22rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.iconeH{
+
+}
+
+.rechercheBar{
+    font-size: 20rem;
 }
 
 /*Contact*/
@@ -27,7 +46,7 @@ header {
 }
 
 .imageUtilisateurCO{
-    border: solid orange;
+    border: solid #FFC670;
     border-radius: 100px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -75,17 +94,28 @@ header {
 /* *****************  MAIN  ********************* */
 
 #cart_main{
-
+    background-color: #333232;
+    color: #dddddd;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
     font-size: 10rem;
+
 }
 
 
 /* ***************** CART_ARTICLE ********************* */
 
 .cart_article {
+    background-color: #414040;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-
+    border: 1px solid #dddddd;
+    border-radius: 15px;
 }
 
 .cart_content{
@@ -239,35 +269,27 @@ footer{
 
 #imgHome1 {
 
-    background-image: url("../image_acceuil/FirstImage.png");
+    background-image: url("../img/image_accueil/FirstImage.png");
 }
 
 #imgHome2 {
 
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../image_acceuil/SecondImage.png");
+    background-image: url("../img/image_accueil/SecondImage.png");
 }
 
 #imgHome3 {
 
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../image_acceuil/ThirdImage.png");
+    background-image: url("../img/image_accueil/ThirdImage.png");
 }
 
 #imgHome4 {
 
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../image_acceuil/FourthImage.png");
+    background-image: url("../img/image_accueil/FourthImage.png");
 }
 
 #imgHome5 {
 
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../image_acceuil/FirthImage.png");
+    background-image: url("../img/image_accueil/FirthImage.png");
 }
 
 
