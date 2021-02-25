@@ -1,5 +1,9 @@
 @extends('layout')
+@section('title')
+    Register
+@endsection
 
+@section('content')
 <div class="fondCO">
     <div class="contourImageUtilisateurCO">
         <svg class="imageUtilisateurCO" width="131" height="124" viewBox="0 0 131 124" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,3 +53,4 @@
         Connection ?
     </div>
 </div>
+@endsection

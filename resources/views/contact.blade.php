@@ -1,5 +1,9 @@
 @extends('layout')
+@section('title')
+    Contact
+@endsection
 
+@section('content')
 <div class="fondCO">
     <div class="contourImageUtilisateurCO">
         <svg class="imageUtilisateurCO" width="131" height="124" viewBox="0 0 131 124" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +28,8 @@
     <div>
         <input class="boutonValiderCO" type="submit" value="  Valider  ">
     </div>
-    <div class="textCO newuserCO">
+    <div class="textCO newUserCO">
         Nouvelle utilisateur ?
     </div>
 </div>
+@endsection
