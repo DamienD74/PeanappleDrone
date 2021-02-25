@@ -49,8 +49,8 @@
     <div>
         <input class="boutonValiderCO" type="submit" value="  Valider  ">
     </div>
-    <div class="textCO newuserCO">
-        Connection ?
+    <div class="textCO newUserCO">
+        <a href="{{route('contact')}}">Connection ?</a>
     </div>
 </div>
 @endsection

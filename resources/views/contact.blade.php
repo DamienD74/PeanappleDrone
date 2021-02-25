@@ -29,7 +29,7 @@
         <input class="boutonValiderCO" type="submit" value="  Valider  ">
     </div>
     <div class="textCO newUserCO">
-        Nouvelle utilisateur ?
+        <a href="{{route('register')}}">Nouvelle utilisateur ?</a>
     </div>
 </div>
 @endsection
