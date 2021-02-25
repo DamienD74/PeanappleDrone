@@ -1,16 +1,14 @@
 @extends('layout')
-@section('style')
- <link rel="stylesheet" href="{{ asset('css/cart_style.css')}}">
-     @endsection
 @section('title')
 Panier
 @endsection
+
 @section('content')
-<main>
+<main id="cart_main">
 
     <div class="cart_article">
 
-        <div class="top_content">
+        <div class="cart_content">
             <div class="article_image">
                 <img alt="" src="{{asset('img/drone/splash-drone-3----p-image-203855-grande-removebg-preview.png')}}"/>
             </div>
@@ -23,12 +21,16 @@ Panier
             </div>
 
         </div>
-        <div class="bottom_content">
+        <div class="cart_content">
             <div class="quantifier">
+
+
+                <h1>754552554</h1>
 
             </div>
             <div class="price">
 
+                <h1>85787544</h1>
             </div>
         </div>
     </div>
