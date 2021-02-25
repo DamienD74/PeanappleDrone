@@ -252,7 +252,7 @@ header {
     display: flex;
     flex-direction: column;
     border: 1px solid #dddddd;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .cart_content{
@@ -271,11 +271,32 @@ header {
 
 .quantifier{
 
+    background-color: transparent;
+    display: flex;
+
+}
+.quantifier input{
+    width: 20px;
+}
+
+.quantifier button{
+    border: 5px;
+    border-radius: 2px
+;
 }
 
 .price{
-
+    display: flex;
 }
+
+.price h2{
+    padding-top: 5px;
+}
+
+.price h1{
+    padding-right: 5px;
+}
+
 
 .article_image img{
     height: 80rem;
