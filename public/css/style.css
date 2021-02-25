@@ -1,14 +1,16 @@
+/*HTML*/
+
 html{
     font-size: 1px;
 }
 
-footer {
-    width: 100vw;
-}
+/*Body*/
 
 body{
     margin: auto;
 }
+
+/*Contact*/
 
 .fondCO{
     background-color: #dddddd;
@@ -52,4 +54,57 @@ body{
     margin-top: 60rem;
     padding-bottom: 20rem;
     padding-right: 15rem;
+}
+
+/*Footer*/
+
+footer{
+    text-align: center;
+    background-color: black;
+}
+
+.textF{
+    font-size: 10rem;
+    font-family: Ubuntu, serif;
+    color: white;
+}
+
+.titleF{
+    font-size: 20rem;
+    font-family: Ubuntu, serif;
+    font-weight: bold;
+    color: white;
+}
+
+.enteteF{
+    padding-top: 50rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+}
+
+.mentionF{
+    margin-top: 50rem;
+}
+
+.blockLien{
+    list-style-type:none;
+    padding-left: 0rem;
+    margin-top: 20rem;
+}
+
+.lienF{
+    margin-top: 10rem;
+}
+
+.blockIconeF{
+    margin-top: 50rem;
+}
+
+.iconeF{
+    padding-right: 50rem;
+}
+
+.copyrightF{
+    margin-top: 50rem;
+    padding-bottom: 50rem;
 }
