@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{{asset('css/cart_style.css')}}">
-</head>
-<body>
-
-
+@extends('layout')
+@section('style')
+ <link rel="stylesheet" href="{{ asset('css/cart_style.css')}}">
+     @endsection
+@section('title')
+Panier
+@endsection
+@section('content')
 <main>
 
     <div class="cart_article">
@@ -39,7 +37,4 @@
     </div>
 
 </main>
-
-
-</body>
-</html>
+@endsection

@@ -22,9 +22,7 @@ Route::get('/', function () {
 
 Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalogue']);
 
-Route::get('/footer', function () {
-    return view('footer');
-});
+
 
 Route::get('/cart', function () {
     return view('cart');});

@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Footer</title>
-    <link rel="stylesheet"  href="{{ asset('css/footer.css')}}">
-</head>
+
+@section('footer')
 <footer>
     <div class="enteteF textF">
         Hello! Nous sommes Pineapple Drone. Premier site de vente de drone en ligne.
@@ -69,7 +64,7 @@
         </a>
     </div>
     <div class="copyrightF textF">
-        @ 2021 Pineapple Drone
+
     </div>
 </footer>
-</html>
+@endsection

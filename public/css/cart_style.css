@@ -13,26 +13,22 @@ body{
 .cart_article {
     display: flex;
 
-    grid-template-areas:
-        "a b b"
-        "c d d"
-;
 }
 
 .article_image{
-    grid-area: a;
+
 }
 
 .article_description{
-    grid-area: b;
+
 }
 
 .quantifier{
-    grid-area: c;
+
 }
 
 .price{
-    grid-area: d;
+
 }
 
 .article_image img{
