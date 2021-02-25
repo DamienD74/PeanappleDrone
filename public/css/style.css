@@ -242,13 +242,13 @@ footer{
 
 .titreHome {
     font-family: Ubuntu, cursive;
-    font-size: 40rem;
+    font-size: 70rem;
     color: white;
 }
 
 .textHome {
     font-family: Ubuntu, serif;
-    font-size: 25rem;
+    font-size: 60rem;
     display: flex;
     color: white;
 }
