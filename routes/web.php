@@ -16,6 +16,13 @@ use App\Http\Controllers\Panier;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return view('products');
+});
+Route::get('/home', function () {
+    return view('home');
+});
+
 Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalogue']);
 
 Route::get('/footer', function () {
