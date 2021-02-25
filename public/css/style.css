@@ -110,52 +110,78 @@ footer{
     padding-bottom: 50rem;
 }
 
+
+
+
 /*HOME*/
+
+
 .titreHome {
     font-family: Ubuntu, cursive;
-    font-size: 90px;
+    font-size: 40rem;
+    color: white;
 }
 
 .textHome {
     font-family: Ubuntu, serif;
-    font-size: 70rem;
+    font-size: 25rem;
     display: flex;
+    color: white;
 }
 
 .blockHome {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
 }
 
 #imgHome1 {
-    width: 1000rem;
-    height: 666rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
     background-image: url("../image_acceuil/FirstImage.png");
 }
 
 #imgHome2 {
-    width: 1000rem;
-    height: 666rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
     background-image: url("../image_acceuil/SecondImage.png");
 }
 
 #imgHome3 {
-    width: 1000px;
-    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
     background-image: url("../image_acceuil/ThirdImage.png");
 }
 
 #imgHome4 {
-    width: 1000rem;
-    height: 500rem;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
     background-image: url("../image_acceuil/FourthImage.png");
 }
 
 #imgHome5 {
-    width: 1000rem;
-    height: 350rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 50vh;
     background-image: url("../image_acceuil/FirthImage.png");
 }
+
+
+
 /*END HOME*\
