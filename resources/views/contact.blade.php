@@ -22,7 +22,7 @@
                minlength="1" maxlength="35" size="20">
     </div>
     <div>
-        <input class="boutonValiderCO" type="submit" value="Valider">
+        <input class="boutonValiderCO" type="submit" value="  Valider  ">
     </div>
     <div class="textCO newuserCO">
         Nouvelle utilisateur ?

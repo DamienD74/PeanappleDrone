@@ -2,6 +2,10 @@ html{
     font-size: 1px;
 }
 
+body{
+    margin: auto;
+}
+
 .fondCO{
     background-color: #dddddd;
     text-align: center;
@@ -16,10 +20,14 @@ html{
 
 .textCO{
     margin-top: 25px;
-    font-size: 25rem;
+    font-size: 20rem;
     font-family: Ubuntu, serif;
     font-style: italic;
     color: black;
+}
+
+.textBoutonCO{
+    color: white;
 }
 
 .champText{
@@ -28,8 +36,16 @@ html{
 
 .boutonValiderCO{
     margin-top: 25px;
+    font-size: 25rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
 }
 
-.newuserCO{
-
+.newUserCO{
+    text-align: right;
+    margin-top: 60rem;
+    padding-bottom: 20rem;
+    padding-right: 15rem;
 }
