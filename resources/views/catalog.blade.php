@@ -1,5 +1,9 @@
 @extends('layout')
+@section('title')
+    Catalogue
+@endsection
 @section('content')
+    <div class="RealbgCat">
     <div class="BgDivCat">
         <div>
             <img class="Catimg" src="{{asset('/img/drone/splash-drone-3----p-image-203855-grande-removebg-preview.png')}}" alt="Splash Drone" >
@@ -67,7 +71,8 @@
                 Vitesse en vol max : 20m/s
             </p>
             <div class="Catlign"></div>
-            <p class="textCat">1559.00€</p>
+            <p class="textCat CatnoMarg">1559.00€</p>
         </div>
+    </div>
     </div>
 @endsection
