@@ -9,7 +9,28 @@
     </div>
     <div>
         <div class="textCO">
-            Nom d'utilisateur ou email
+            Prénom
+        </div>
+        <input class="champText" type="text" id="firstName" name="firstName" required
+               minlength="1" maxlength="35" size="20">
+    </div>
+    <div>
+        <div class="textCO">
+            Nom
+        </div>
+        <input class="champText" type="text" id="name" name="name" required
+               minlength="1" maxlength="35" size="20">
+    </div>
+    <div>
+        <div class="textCO">
+            Email
+        </div>
+        <input class="champText" type="text" id="email" name="email" required
+               minlength="1" maxlength="35" size="20">
+    </div>
+    <div>
+        <div class="textCO">
+            Nom d'utilisateur
         </div>
         <input class="champText" type="text" id="userName" name="userName" required
                minlength="1" maxlength="35" size="20">
@@ -25,6 +46,6 @@
         <input class="boutonValiderCO" type="submit" value="  Valider  ">
     </div>
     <div class="textCO newuserCO">
-        Nouvelle utilisateur ?
+        Connection ?
     </div>
 </div>

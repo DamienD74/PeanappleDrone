@@ -1,16 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{{asset('css/cart_style.css')}}">
-</head>
-<body>
-
-
+@extends('layout')
+@section('style')
+ <link rel="stylesheet" href="{{ asset('css/cart_style.css')}}">
+     @endsection
+@section('title')
+Panier
+@endsection
+@section('content')
 <main>
 
     <div class="cart_article">
+
+        <div class="top_content">
             <div class="article_image">
                 <img alt="" src="{{asset('img/drone/splash-drone-3----p-image-203855-grande-removebg-preview.png')}}"/>
             </div>
@@ -21,12 +21,16 @@
                     Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit.</p>
             </div>
+
+        </div>
+        <div class="bottom_content">
             <div class="quantifier">
 
             </div>
             <div class="price">
 
             </div>
+        </div>
     </div>
     <div>
 
@@ -39,7 +43,4 @@
     </div>
 
 </main>
-
-
-</body>
-</html>
+@endsection

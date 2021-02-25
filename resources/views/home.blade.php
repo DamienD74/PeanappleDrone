@@ -24,6 +24,6 @@
         <div class="textHome">Lorem</div>
     </div>
 </div>
-@stop
+@endsection
 
 

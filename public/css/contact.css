@@ -2,13 +2,54 @@ html{
     font-size: 1px;
 }
 
+footer {
+    width: 100vw;
+}
+
+body{
+    margin: auto;
+}
+
 .fondCO{
     background-color: #dddddd;
+    text-align: center;
+}
+
+.imageUtilisateurCO{
+    border: solid orange;
+    border-radius: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .textCO{
-    font-size: 25rem;
+    margin-top: 25px;
+    font-size: 20rem;
     font-family: Ubuntu, serif;
     font-style: italic;
     color: black;
+}
+
+.textBoutonCO{
+    color: white;
+}
+
+.champText{
+    font-size: 20rem;
+}
+
+.boutonValiderCO{
+    margin-top: 25px;
+    font-size: 25rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.newUserCO{
+    text-align: right;
+    margin-top: 60rem;
+    padding-bottom: 20rem;
+    padding-right: 15rem;
 }
