@@ -17,9 +17,6 @@ use App\Http\Controllers\Panier;
 |
 */
 Route::get('/', function () {
-    return view('products');
-});
-Route::get('/home', function () {
     return view('home');
 });
 

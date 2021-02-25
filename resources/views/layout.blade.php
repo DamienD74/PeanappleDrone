@@ -8,9 +8,9 @@
     <link rel="stylesheet"  href="{{ asset('css/contact.css')}}">
 </head>
 <body>
-@yield('layout')
-@extends('header')
 
+
+@yield('content')
 @extends('footer')
 
 

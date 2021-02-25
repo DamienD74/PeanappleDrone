@@ -1,5 +1,5 @@
 
-@yield('header')
+@section('header')
 <h1>Pineapple Drone</h1>
 <img src="{{assert('/image_acceuil/Icone.png')}}" alt="logo" width="80" height="80">
 <div class="topnav">
