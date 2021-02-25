@@ -10,8 +10,10 @@
     <link rel="stylesheet"  href="{{ asset('css/contact.css')}}">
 </head>
 <body>
-@yield('content')
+@yield('layout')
+@extends('header')
 
+@extends('footer')
 
 
 </body>

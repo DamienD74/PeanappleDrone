@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
+
 
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\HomeController;
@@ -22,7 +22,14 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+Route::get('/home', function () {
+    return view('home');
 
+});
+
+Route::get('/layout', function () {
+    return view('layout');
+});
 Route::get('/footer', function () {
     return view('footer');
 });

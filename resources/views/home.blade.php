@@ -1,22 +1,33 @@
 @extends('layout')
 @section('content')
-<main>
-    <div class="imageHome"><img src= {{asset('/image_acceuil/FirthImage.png')}} alt="Image" width="1000" height="666"> <a class="titreHome">Phantom 4 Pro
-            V2 </a><p class="texte1">Caméra embarquée, détection et évitement d’obstacles, assistance en vol...</p></div>
-    <div class="imageHome"><img src={{asset('/image_acceuil//SecondImage.png')}} alt="Image" width="1000" height="666"> <a class="titreHome">Potensic T25
-            <p class="texteHome">GPS intégré, caméra HD, mode “Return home”, adapté aux débutants... </p></a>
+<div class="blockHome">
+    <div class="imageHome"><img src="{{assert('/image_acceuil/FirstImage.png')}}" alt="Image" width="1000" height="666">
+        <div class="titreHome">Phantom V7</div>
+        <div class="textHome">Lorem</div>
     </div>
-    <div class="imageHome"><img src={{asset('/image_acceuil/ThirdImage.png')}} alt="Image" width="1000" height="666"> <a class="titreHome">Agras MG-1S RTK
-            <p class="texteHome"> 10 l de cargaison, autonomie jusqu’à 22 minutes, traitement centimétrique...</p></a>
+    <div class="imageHome"><img src="{{assert('/image_acceuil/SecondImage.png')}}" alt="Image" width="1000"
+                                height="666">
+        <div class="titreHome">Phantom V7</div>
+        <div class="textHome">Lorem</div>
     </div>
-    <div class="imageHome"><img src={{asset('/image_acceuil/FourthImage.png')}} alt="Image" width="1000" height="666"> <a class="titreHome">Cheerson CX-35
-            Pro <p class="texteHome">10 l de cargaison, autonomie jusqu’à 22 minutes, traitement centimétrique...</p></a>
+    <div class="imageHome"><img src="{{assert('/image_acceuil/ThirdImage.png')}}" alt="Image" width="1000"
+                                height="666">
+        <div class="titreHome">Phantom V7</div>
+        <div class="textHome">Lorem</div>
+        <div class="textHome">Lorem</div>
     </div>
-    <div class="imageHome"><img src={{asset('/image_acceuil/FirthImage.png')}} alt="Image" width="1000" height="666"> <a class="titreHome">Spark- Emotion
-            instantanée <p class="texteHome">Options intelligentes de contrôles, caméra HD, adapté aux débutants...</p></a>
+    <div class="imageHome"><img src="{{assert('/image_acceuil/FourthImage.png')}}" alt="Image" width="1000"
+                                height="666">
+        <div class="titreHome">Phantom V7</div>
+        <div class="textHome">Lorem</div>
     </div>
-</main>
+    <div class="imageHome"><img src="{{assert('/image_acceuil/FirthImage.png')}}" alt="Image" width="1000"
+                                height="666">
+        <div class="titreHome">Phantom V7</div>
+        <div class="textHome">Lorem</div>
+    </div>
+</div>
+@endsection
 
-@stop
-
-
+</body>
+</html>
