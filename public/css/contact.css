@@ -4,11 +4,32 @@ html{
 
 .fondCO{
     background-color: #dddddd;
+    text-align: center;
+}
+
+.imageUtilisateurCO{
+    border: solid orange;
+    border-radius: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .textCO{
+    margin-top: 25px;
     font-size: 25rem;
     font-family: Ubuntu, serif;
     font-style: italic;
     color: black;
+}
+
+.champText{
+    font-size: 20rem;
+}
+
+.boutonValiderCO{
+    margin-top: 25px;
+}
+
+.newuserCO{
+
 }
