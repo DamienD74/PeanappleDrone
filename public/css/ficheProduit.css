@@ -1,0 +1,71 @@
+html{
+    font-size : 1px;
+}
+
+.backgroundFP{
+    background: #333232;
+}
+
+
+.blocProduitFP{
+    text-align: center;
+}
+
+.imageFP{
+    width:317rem;
+    height:172rem;
+    background: #414040;
+}
+
+.titreFP{
+    width:317rem;
+    height:40rem;
+    background: #414040;
+    font-size: 24rem;
+    font-family: Ubuntu, serif;
+    font-weight: 0.5;
+    color: #DDDDDD;
+}
+
+.descriptionFP{
+    width:317rem;
+    height:229rem;
+    background: #414040;
+    font-size: 18rem;
+    font-family: Ubuntu, serif;
+    color: #DDDDDD;
+}
+
+.priceFP{
+    width:145rem;
+    height:43rem;
+    background: #414040;
+    font-size: 18rem;
+    font-family: Ubuntu, serif;
+    color: white;
+}
+
+
+.boutonFP{
+    font-family: Roboto, serif;
+    color: white;
+    font-size: 25rem;
+    width: 300rem;
+    height: 59rem;
+    background: #73E030;
+    border-radius: 20rem;
+}
+
+
+.imageDroneFP{
+    width:153rem;
+    height:102rem;
+    background: #414040;
+}
+
+
+.nomFP{
+    font-size: 12rem;
+    font-family: Ubuntu, serif;
+    color: white;
+}

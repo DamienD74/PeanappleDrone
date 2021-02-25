@@ -33,6 +33,11 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+<<<<<<< Updated upstream
 Route::get('/register', function () {
     return view('register');
+=======
+Route::get('/ficheProduit', function () {
+    return view('ficheProduit');
+>>>>>>> Stashed changes
 });
