@@ -11,8 +11,9 @@
 
 
 @yield('content')
-@yield('footer')
 
-
+<footer>
+    @include('footer')
+</footer>
 </body>
 </html>

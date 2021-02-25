@@ -9,6 +9,8 @@ Panier
 <main>
 
     <div class="cart_article">
+
+        <div class="top_content">
             <div class="article_image">
                 <img alt="" src="{{asset('img/drone/splash-drone-3----p-image-203855-grande-removebg-preview.png')}}"/>
             </div>
@@ -19,12 +21,16 @@ Panier
                     Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit.</p>
             </div>
+
+        </div>
+        <div class="bottom_content">
             <div class="quantifier">
 
             </div>
             <div class="price">
 
             </div>
+        </div>
     </div>
     <div>
 

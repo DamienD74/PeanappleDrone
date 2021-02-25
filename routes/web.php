@@ -27,7 +27,10 @@ Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalog
 Route::get('/cart', function () {
     return view('cart');});
 
-    Route::get('/contact', function () {
+Route::get('/contact', function () {
     return view('contact');
+});
 
+Route::get('/register', function () {
+    return view('register');
 });
