@@ -238,35 +238,27 @@ footer{
 
 #imgHome1 {
 
-    background-image: url("../image_acceuil/FirstImage.png");
+    background-image: url("../img/image_accueil/FirstImage.png");
 }
 
 #imgHome2 {
 
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../image_acceuil/SecondImage.png");
+    background-image: url("../img/image_accueil/SecondImage.png");
 }
 
 #imgHome3 {
 
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../image_acceuil/ThirdImage.png");
+    background-image: url("../img/image_accueil/ThirdImage.png");
 }
 
 #imgHome4 {
 
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../image_acceuil/FourthImage.png");
+    background-image: url("../img/image_accueil/FourthImage.png");
 }
 
 #imgHome5 {
 
-    width: 100vw;
-    height: 50vh;
-    background-image: url("../image_acceuil/FirthImage.png");
+    background-image: url("../img/image_accueil/FirthImage.png");
 }
 
 
