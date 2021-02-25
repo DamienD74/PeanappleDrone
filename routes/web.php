@@ -24,7 +24,9 @@ Route::get('/head', function () {
 });
 Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalogue']);
 
-
+Route::get('/ficheProduit', function () {
+    return view('ficheProduit');
+});
 
 Route::get('/cart', function () {
     return view('cart');});
@@ -33,11 +35,4 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
-<<<<<<< Updated upstream
-Route::get('/register', function () {
-    return view('register');
-=======
-Route::get('/ficheProduit', function () {
-    return view('ficheProduit');
->>>>>>> Stashed changes
-});
+
