@@ -1,0 +1,47 @@
+/* ********************  CART MAIN CONTENT  ************************ */
+
+/* *****************  MAIN  ********************* */
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2ca02c;
+}
+
+/* ***************** CART_ARTICLE ********************* */
+
+.cart_article {
+    display: flex;
+
+    grid-template-areas:
+        "a b b"
+        "c d d"
+;
+}
+
+.article_image{
+    grid-area: a;
+}
+
+.article_description{
+    grid-area: b;
+}
+
+.quantifier{
+    grid-area: c;
+}
+
+.price{
+    grid-area: d;
+}
+
+.article_image img{
+    height: 80px;
+    width: 150px;
+}
+
+
+
+
+
+

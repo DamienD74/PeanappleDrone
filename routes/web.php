@@ -1,10 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 
-
-use App\Http\Controllers\ProductsController;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\CartController;
+use App\Http\Controllers\Produit;
+use App\Http\Controllers\Acceuil;
+use App\Http\Controllers\Panier;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,18 +22,17 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
-Route::get('/home', function () {
-    return view('home');
 
-});
+Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalogue']);
 
-Route::get('/layout', function () {
-    return view('layout');
-});
 Route::get('/footer', function () {
     return view('footer');
 });
 
-Route::get('/contact', function () {
+Route::get('/cart', function () {
+    return view('cart');});
+
+    Route::get('/contact', function () {
     return view('contact');
+
 });

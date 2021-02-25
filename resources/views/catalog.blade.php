@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+@extends('layout')
 
-</body>
-</html>
+@section('content')
+    <div>
+        <div>
+            <img src="../../public/img/drone/splash-drone-3----p-image-203855-grande.jpg" alt="Drone splash"/>
+        </div>
+    </div>
+@endsection
