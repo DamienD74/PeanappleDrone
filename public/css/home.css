@@ -1,0 +1,47 @@
+.titreHome {
+    font-family: Ubuntu, cursive;
+    font-size: 90px;
+}
+
+.textHome {
+    font-family: Ubuntu, serif;
+    font-size: 70px;
+    display: flex;
+}
+
+.blockHome {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#imgHome1 {
+    width: 1000px;
+    height: 666px;
+    background-image: url("../image_acceuil/FirstImage.png");
+}
+#imgHome2 {
+    width: 1000px;
+    height: 666px;
+    background-image: url("../image_acceuil/SecondImage.png");
+}
+#imgHome3 {
+    width: 1000px;
+    height: 350px;
+    background-image: url("../image_acceuil/ThirdImage.png");
+}
+#imgHome4 {
+    width: 1000px;
+    height: 500px;
+    background-image: url("../image_acceuil/FourthImage.png");
+}
+#imgHome5 {
+    width: 1000px;
+    height: 350px;
+    background-image: url("../image_acceuil/FirthImage.png");
+}
+
