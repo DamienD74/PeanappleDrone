@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\Produit;
-use App\Http\Controllers\Acceuil;
-use App\Http\Controllers\Panier;
+use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CartController;
 
 /*
 |--------------------------------------------------------------------------
