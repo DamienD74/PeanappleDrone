@@ -360,41 +360,94 @@ footer{
     padding-bottom: 50rem;
 }
 /*Catalogue*/
+@media (max-width: 800px) {
+
+    .RealbgCat {
+        background-color: #333232;
+        padding: 50rem 0;
+    }
+
+    .Catimg {
+        height: 200rem;
+        width: 300rem;
+
+    }
+
+    .BgDivCat {
+
+        background-color: #414040;
+        text-align: center;
+    }
+
+    .textCatH3 {
+        font-family: Ubuntu, serif;
+        font-size: 25rem;
+        color: #dddddd;
+        opacity: 50%;
+        text-align: center;
+    }
+
+    .textCat {
+        font-family: Ubuntu, serif;
+        font-size: 25rem;
+        color: #dddddd;
+    }
+
+    .Catlign {
+        background-color: #dddddd;
+        height: 2px;
+        width: 100%;
+    }
+
+    .CatnoMarg {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 801px){
+
 .RealbgCat {
     background-color: #333232;
     padding: 50rem 0;
+
 }
+
 .Catimg {
     height: 200rem;
     width: 300rem;
 
 }
+
 .BgDivCat {
+    display: inline-block;
+    justify-content: space-around;
     background-color: #414040;
-    text-align: center;
+    margin: 30rem;
+    padding: 0 40rem;
 }
+
 .textCatH3 {
     font-family: Ubuntu, serif;
     font-size: 25rem;
     color: #dddddd;
     opacity: 50%;
     text-align: center;
-}.textCat {
-     font-family: Ubuntu, serif;
-     font-size: 25rem;
-     color: #dddddd;
- }
+}
+
+.textCat {
+    font-family: Ubuntu, serif;
+    font-size: 25rem;
+    color: #dddddd;
+    text-align: center;
+}
+
 .Catlign {
     background-color: #dddddd;
     height: 2px;
     width: 100%;
 }
-.CatnoMarg {
-    margin-bottom: 0px;
+
 }
-
-
-
 
 /*HOME*/
 
