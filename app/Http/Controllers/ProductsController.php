@@ -7,8 +7,8 @@ use Illuminate\Routing\Controller as BaseController;
 
 class ProductsController extends BaseController
 {
-    public function products()
+    public function product()
     {
-        return view('products');
+        return view('product');
     }
 }
