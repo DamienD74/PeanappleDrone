@@ -513,6 +513,7 @@ html{
     font-size : 1px;
 }
 
+
 .backgroundFP{
     background: #333232;
 }
@@ -520,40 +521,58 @@ html{
 
 .blocProduitFP{
     text-align: center;
+    padding-top: 29rem;
 }
 
 .imageFP{
     width:317rem;
-    height:172rem;
-    background: #414040;
+    height:100%;
+    background-color: #414040;
+    margin-left: 29rem;
+    padding-top: 29rem;
 }
 
-.titreFP{
+.backgroundTitreFP{
     width:317rem;
-    height:40rem;
+    height:100%;
     background: #414040;
+    margin-top: 29rem;
+    margin-left: 29rem;
     font-size: 24rem;
     font-family: Ubuntu, serif;
     font-weight: 0.5;
     color: #DDDDDD;
 }
 
+.titreFP{
+    padding-top: 5rem;
+}
+
 .descriptionFP{
     width:317rem;
-    height:229rem;
+    height:100%;
     background: #414040;
+    margin-top: 29rem;
+    margin-left: 29rem;
     font-size: 18rem;
     font-family: Ubuntu, serif;
     color: #DDDDDD;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    padding-left: 10rem;
+    text-align: left;
 }
 
 .priceFP{
     width:145rem;
-    height:43rem;
+    height:100%;
     background: #414040;
+    margin-top: 29rem;
+    margin-left: 29rem;
     font-size: 18rem;
     font-family: Ubuntu, serif;
     color: white;
+    padding:10rem 0rem;
 }
 
 
@@ -565,18 +584,32 @@ html{
     height: 59rem;
     background: #73E030;
     border-radius: 20rem;
+    margin-top: 29rem;
 }
 
+.flexBoxFP{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 14rem;
+}
 
-.imageDroneFP{
+.blocFP{
+
+    background-color: #414040;
     width:153rem;
     height:102rem;
-    background: #414040;
+    margin: 15rem;
 }
 
-
-.nomFP{
+.texteFP{
+    font-family: ubuntu, serif;
     font-size: 12rem;
-    font-family: Ubuntu, serif;
     color: white;
+    text-align: center;
+
+}
+
+.imageDroneFP{
+    text-align: center;
 }

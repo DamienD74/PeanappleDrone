@@ -1,16 +1,14 @@
 @extends('layout')
 @section('content')
 
-<link rel="stylesheet"  href="{{ asset('css/ficheProduit.css')}}">
 
-<body>
 <div class="backgroundFP">
     <div class="blocProduitFP">
         <div class="imageFP">
             <img src={{asset('/img/drone/splash-drone-3----p-image-203855-grande-removebg-preview.png')}} height="152" width="261">
         </div>
-        <div class="titreFP">
-            Helsel Splash Drone 3+
+        <div class="backgroundTitreFP">
+            <div class="titreFP">Helsel Splash Drone 3+ </div>
         </div>
 
         <div class="descriptionFP">
@@ -25,7 +23,7 @@
         </div>
 
         <div class="priceFP">
-            Prix: 1559 €
+           Prix: 1559 €
         </div>
 
         <input class="boutonFP"
@@ -33,49 +31,41 @@
                value="Ajouter au panier">
     </div>
 
-    <div>
-        <div>
-            <a class="imageDroneFP">
-                <div>
-                    <img src={{asset('/img/drone/dji-matrice-300-removebg-preview.png')}} height:"153" width="71">>
-                </div>
-                <div class="nomFP">
-                    DJI Matrice 300
-                </div>
-            </a>
-            <a class="imageDroneFP">
-                <div>
-                    <img src={{asset('/img/drone/matrice_200-removebg-preview.png')}} height:"135" width="83">>
-                </div>
-                <div  class="nomFP">
-                    DJI Matrice 200
-                </div>
-            </a>
+<div class="flexBoxFP">
+    <div class="blocFP">
+        <div class="imageDroneFP">
+            <img src={{asset('/img/drone/dji-matrice-300-removebg-preview.png')}} height="75" width="152">
         </div>
-        <div>
-            <a class="imageDroneFP">
-                <div>
-                    <img src={{asset('/img/drone/matrice_600-removebg-preview.png')}} height:"157" width="88">>
-                </div>
-                <div class="nomFP">
-                    DJI Matrice 600
-                </div>
-            </a>
-            <a class="imageDroneFP">
-                <div>
-                    <img src={{asset('/img/drone/inspire_2-removebg-preview.png')}} height:"151" width="80">>
-                </div>
-                <div  class="nomFP">
-                    DJI Inspire 2
-                </div>
-
-            </a>
+        <div class="texteFP">
+            DJI Matrice 300
+        </div>
+    </div>
+    <div class="blocFP">
+        <div class="imageDroneFP">
+            <img src={{asset('/img/drone/matrice_200-removebg-preview.png')}} height="83" width="135">
+        </div>
+        <div class="texteFP">
+            DJI Matrice 200
+        </div>
+    </div>
+    <div class="blocFP">
+        <div class="imageDroneFP">
+            <img src={{asset('/img/drone/matrice_600-removebg-preview.png')}} height="80" width="152">
+        </div>
+        <div class="texteFP">
+            DJI Matrice 600
+        </div>
+    </div>
+    <div class="blocFP">
+        <div class="imageDroneFP">
+            <img src={{asset('/img/drone/inspire_2-removebg-preview.png')}} height="88" width="157">
+        </div>
+        <div class="texteFP">
+            DJI Inspire 2
         </div>
     </div>
 </div>
 
-
-</body>
 @stop
 
 
