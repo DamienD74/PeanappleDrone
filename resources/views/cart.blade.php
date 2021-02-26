@@ -25,7 +25,7 @@ Panier
             <div class="quantifier">
 
 
-                <h1>754552554</h1>
+                <input type="number" value="1" min="0" max="50">
 
             </div>
             <div class="price">
@@ -54,7 +54,7 @@ Panier
             <div class="quantifier_container">
                 <div class="quantifier">
 
-                <button></button><input type="text"><button></button>
+                <input type="number" value="1" min="0" max="50">
 
 
 
@@ -86,7 +86,7 @@ Panier
             <div class="quantifier">
 
 
-                <h1>754552554</h1>
+                <input type="number" value="1" min="0" max="50">
 
             </div>
             <div class="price">

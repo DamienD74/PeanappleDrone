@@ -276,14 +276,14 @@ header {
 
 }
 .quantifier input{
-    width: 20px;
+    width: 40px;
+    height: 30px;
+    border-color: #dddddd;
+    background-color: #414040;
+    border-radius: 2px;
+    color: #dddddd;
 }
 
-.quantifier button{
-    border: 5px;
-    border-radius: 2px
-;
-}
 
 .price{
     display: flex;
