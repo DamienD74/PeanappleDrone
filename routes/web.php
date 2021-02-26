@@ -22,9 +22,7 @@ Route::get('/', [HomeController::class, 'home'])->name("home");
 
 Route::get('/catalog', [CatalogController::class, 'catalog'])->name("catalog");
 
-Route::get('/ficheProduit', function () {
-    return view('ficheProduit');
-});
+Route::get('/product', [ProductsController::class, 'product'])->name("product");
 
 Route::get('/cart', [CartController::class, 'cart'])->name("cart");
 
