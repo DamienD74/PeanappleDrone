@@ -3,10 +3,11 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Routing\Controller as BaseController;
 
-class CatalogController extends Controller
+class CatalogController extends BaseController
 {
-    public function catalogue()
+    public function catalog()
     {
         return view('catalog');
     }

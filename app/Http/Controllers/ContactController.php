@@ -3,8 +3,17 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Routing\Controller as BaseController;
 
-class contactController
+class ContactController extends BaseController
 {
+    public function contact()
+    {
+        return view('contact');
+    }
 
+    public function register()
+    {
+        return view('register');
+    }
 }

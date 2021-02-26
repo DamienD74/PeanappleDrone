@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CatalogController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,24 +18,16 @@ use App\Http\Controllers\CartController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [HomeController::class, 'home']);
+Route::get('/', [HomeController::class, 'home'])->name("home");
 
-Route::get('/head', function () {
-    return view('header');
-});
-Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalogue'])->name("catalog");
+Route::get('/catalog', [CatalogController::class, 'catalog'])->name("catalog");
 
 Route::get('/ficheProduit', function () {
     return view('ficheProduit');
 });
 
-Route::get('/cart', function () {
-    return view('cart');})->name('cart');
+Route::get('/cart', [CartController::class, 'cart'])->name("cart");
 
-Route::get('/contact', function () {
-    return view('contact');
-})->name("contact");
+Route::get('/contact', [ContactController::class, 'contact'])->name("contact");
 
-Route::get('/register', function () {
-    return view('register');
-})->name("register");
+Route::get('/register', [ContactController::class, 'register'])->name("register");
