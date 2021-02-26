@@ -21,17 +21,19 @@ Route::get('/', [HomeController::class, 'home']);
 Route::get('/head', function () {
     return view('header');
 });
-Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalogue']);
+Route::get('/catalog', [\App\Http\Controllers\CatalogController::class, 'catalogue'])->name("catalog");
 
 Route::get('/ficheProduit', function () {
     return view('ficheProduit');
 });
 
 Route::get('/cart', function () {
-    return view('cart');});
+    return view('cart');})->name('cart');
 
 Route::get('/contact', function () {
     return view('contact');
-});
+})->name("contact");
 
-
+Route::get('/register', function () {
+    return view('register');
+})->name("register");
