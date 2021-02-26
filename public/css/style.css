@@ -234,7 +234,7 @@ header {
     background-color: #333232;
     color: #dddddd;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     font-size: 10rem;
@@ -287,6 +287,7 @@ header {
 
 .price{
     display: flex;
+    align-items: center;
 }
 
 .price h2{
@@ -303,7 +304,40 @@ header {
     width: 150rem;
 }
 
+.trash{
+    padding-left: 15px;
+}
 
+#cart_total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#total_text{
+
+
+
+}
+
+#cart_total h3{
+    font-weight: 200;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#cart_total input{
+    width: 70%;
+    color: #dddddd;
+    background-color: #73e030;
+    /* ATTENTION !! : bORSDER NONE DESACTIVE L'ANIMATION DU CLIQUER*/
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
 
 
 /*Footer*/
