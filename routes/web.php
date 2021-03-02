@@ -27,6 +27,8 @@ Route::get('/product/{id}', [ProductsController::class, 'product'])->name("produ
 
 Route::get('/cart', [CartController::class, 'cart'])->name("cart");
 
+Route::post('/connection', [ContactController::class, 'connection'])->name("connection");
+
 Route::get('/contact', [ContactController::class, 'contact'])->name("contact");
 
 Route::get('/register', [ContactController::class, 'register'])->name("register");
