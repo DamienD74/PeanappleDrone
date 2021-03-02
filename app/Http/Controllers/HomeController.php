@@ -1,13 +1,12 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 
 class HomeController extends BaseController
 {
-    function home(): string
+    function home()
     {
         return view('home');
     }

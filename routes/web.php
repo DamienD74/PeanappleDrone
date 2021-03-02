@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\BackofficeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,10 +23,22 @@ Route::get('/', [HomeController::class, 'home'])->name("home");
 
 Route::get('/catalog', [CatalogController::class, 'catalog'])->name("catalog");
 
-Route::get('/product', [ProductsController::class, 'product'])->name("product");
+Route::get('/product/{id}', [ProductsController::class, 'product'])->name("product");
 
 Route::get('/cart', [CartController::class, 'cart'])->name("cart");
 
 Route::get('/contact', [ContactController::class, 'contact'])->name("contact");
 
 Route::get('/register', [ContactController::class, 'register'])->name("register");
+
+Route::get('/backoffice', [BackofficeController::class, 'backoffice'])->name("backoffice");
+
+Route::get('/backoffice/add', [BackofficeController::class, 'add'])->name("add");
+
+Route::post('/backoffice/addAtTable', [BackofficeController::class, 'addAtTable'])->name("addAtTable");
+
+Route::get('/backoffice/modifier/{id}', [BackofficeController::class, 'modifier'])->name("modifier");
+
+Route::post('/backoffice/update/{id}', [BackofficeController::class, 'update']);
+
+Route::get('/backoffice/delete/{id}', [BackofficeController::class, 'delete'])->name("delete");

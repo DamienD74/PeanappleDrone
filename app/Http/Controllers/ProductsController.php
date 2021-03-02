@@ -1,14 +1,16 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Routing\Controller as BaseController;
 
 class ProductsController extends BaseController
 {
-    public function product()
+    public function product($id)
     {
-        return view('product');
+        $theProducts = Product::find($id);
+
+        return view("product", ['product' => $theProducts]);
     }
 }

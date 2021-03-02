@@ -647,3 +647,9 @@ html{
 .imageDroneFP{
     text-align: center;
 }
+
+/* BackOffice */
+
+.textBackOffce{
+    font-size: 20rem;
+}
