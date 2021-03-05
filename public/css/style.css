@@ -1,10 +1,708 @@
-html {
+/*HTML*/
+
+html{
     font-size: 1px;
 }
 
-.imageHome {
+/*Body*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
+header {
+    background-color: black;
+    font-size: 20rem;
+}
+
+.enteteH{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoH{
+    width: 66rem;
+    height: 54rem;
+}
+
+.titleH{
+    color: white;
+    font-size: 22rem;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Ubuntu, serif;
+}
+
+.blockIconeH{
+    margin-left: 30rem;
+}
+
+.iconeH{
+    padding-right: 10rem;
+}
+
+.rechercheBar{
+    font-size: 20rem;
+    border-radius: 10px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-left: 7rem;
+}
+
+#menuToggle
+{
+    display: block;
+    position: relative;
+    padding-bottom: 20rem;
+    left: 10rem;
+    margin-top: 20rem;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+    color: tomato;
+}
+
+#menuToggle input
+{
+    display: block;
+    width: 40rem;
+    height: 32rem;
+    position: absolute;
+    top: -7rem;
+    left: -5rem;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+    display: block;
+    width: 33rem;
+    height: 4rem;
+    margin-bottom: 5rem;
+    position: relative;
+
+    background: #FFFFFF;
+    border-radius: 3rem;
+
+    z-index: 1;
+
+    transform-origin: 4rem 0rem;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #FFFFFF;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+    position: absolute;
+    width: 150rem;
+    margin: -40rem 0 0 -50rem;
+    padding-top: 10rem;
+    padding-left: 90rem;
+    padding-bottom: 10rem;
+
+    background: #787878;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+    padding: 10rem 0;
+    font-size: 22rem;
+}
+
+#menuToggle input:checked ~ ul
+{
+    transform: none;
+}
+
+/*Contact*/
+
+.fondCO{
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.imageUtilisateurCO{
+    border: solid #FFC670;
+    border-radius: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.textCO{
+    margin-top: 25px;
+    font-size: 20rem;
+    font-family: Ubuntu, serif;
+    font-style: italic;
+    color: black;
+}
+
+.textBoutonCO{
+    color: white;
+}
+
+.champText{
+    font-size: 20rem;
+}
+
+.boutonValiderCO{
+    margin-top: 25px;
+    font-size: 25rem;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.newUserCO{
+    text-align: right;
+    margin-top: 60rem;
+    padding-bottom: 20rem;
+    padding-right: 15rem;
+}
+
+
+
+
+/* ********************  CART MAIN CONTENT  ************************ */
+
+
+
+/* *****************  MAIN  ********************* */
+
+#cart_main{
+    background-color: #333232;
+    color: #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10rem;
 
 }
+
+
+/* ***************** CART_ARTICLE ********************* */
+
+.cart_article {
+    background-color: #414040;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.cart_content{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.article_image{
+
+}
+
+.article_description{
+
+}
+
+.quantifier{
+
+    background-color: transparent;
+    display: flex;
+
+}
+.quantifier input{
+    width: 40px;
+    height: 30px;
+    border-color: #dddddd;
+    background-color: #414040;
+    border-radius: 2px;
+    color: #dddddd;
+}
+
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.price h2{
+    padding-top: 5px;
+}
+
+.price h1{
+    padding-right: 5px;
+}
+
+
+.article_image img{
+    height: 80rem;
+    width: 150rem;
+}
+
+.trash{
+    padding-left: 15px;
+}
+
+#cart_total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#total_text{
+
+
+
+}
+
+#cart_total h3{
+    font-weight: 200;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#cart_total input{
+    width: 70%;
+    color: #dddddd;
+    background-color: #73e030;
+    /* ATTENTION !! : bORSDER NONE DESACTIVE L'ANIMATION DU CLIQUER*/
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 5px;
+
+}
+
+
+/*Footer*/
+
+footer{
+    text-align: center;
+    background-color: black;
+}
+
+.textF{
+    font-size: 10rem;
+    font-family: Ubuntu, serif;
+    color: white;
+}
+
+.titleF{
+    font-size: 20rem;
+    font-family: Ubuntu, serif;
+    font-weight: bold;
+    color: white;
+}
+
+.enteteF{
+    padding-top: 50rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
+}
+
+.mentionF{
+    margin-top: 50rem;
+}
+
+.blockLien{
+    list-style-type:none;
+    padding-left: 0rem;
+    margin-top: 20rem;
+}
+
+.lienF{
+    margin-top: 10rem;
+}
+
+.blockIconeF{
+    margin-top: 50rem;
+}
+
+.iconeF{
+    padding-right: 10rem;
+    padding-left: 15rem;
+}
+
+.copyrightF{
+    margin-top: 50rem;
+    padding-bottom: 50rem;
+}
+/*Catalogue*/
+@media (max-width: 800px) {
+
+    .RealbgCat {
+        background-color: #333232;
+        padding: 50rem 0;
+    }
+
+    .Catimg {
+        height: 200rem;
+        width: 300rem;
+
+    }
+
+    .BgDivCat {
+
+        background-color: #414040;
+        text-align: center;
+    }
+
+    .textCatH3 {
+        font-family: Ubuntu, serif;
+        font-size: 25rem;
+        color: #dddddd;
+        opacity: 50%;
+        text-align: center;
+    }
+
+    .textCat {
+        font-family: Ubuntu, serif;
+        font-size: 25rem;
+        color: #dddddd;
+    }
+
+    .Catlign {
+        background-color: #dddddd;
+        height: 2px;
+        width: 100%;
+    }
+
+    .CatnoMarg {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 801px){
+
+.RealbgCat {
+    background-color: #333232;
+    padding: 50rem 0;
+
+}
+
+.Catimg {
+    height: 200rem;
+    width: 300rem;
+
+}
+
+.BgDivCat {
+    display: inline-block;
+    justify-content: space-around;
+    background-color: #414040;
+    margin: 30rem;
+    padding: 0 40rem;
+}
+
+.textCatH3 {
+    font-family: Ubuntu, serif;
+    font-size: 25rem;
+    color: #dddddd;
+    opacity: 50%;
+    text-align: center;
+}
+
+.textCat {
+    font-family: Ubuntu, serif;
+    font-size: 25rem;
+    color: #dddddd;
+    text-align: center;
+}
+
+.Catlign {
+    background-color: #dddddd;
+    height: 2px;
+    width: 100%;
+}
+
+}
+
+/*HOME*/
+
+
 .titreHome {
-    font-size: 40px;
+    font-family: Ubuntu, cursive;
+    font-size: 70rem;
+    color: white;
+}
+
+.textHome {
+    font-family: Ubuntu, serif;
+    font-size: 60rem;
+    display: flex;
+    color: white;
+}
+.imageHome {
+    width: 100vw;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blockHome {
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#imgHome1 {
+
+    background-image: url("../img/image_accueil/FirstImage.png");
+}
+
+#imgHome2 {
+
+    background-image: url("../img/image_accueil/SecondImage.png");
+}
+
+#imgHome3 {
+
+    background-image: url("../img/image_accueil/ThirdImage.png");
+}
+
+#imgHome4 {
+
+    background-image: url("../img/image_accueil/FourthImage.png");
+}
+
+#imgHome5 {
+
+    background-image: url("../img/image_accueil/FirthImage.png");
+}
+
+
+
+/*fiche produit*/
+
+html{
+    font-size : 1px;
+}
+
+
+.backgroundFP{
+    background: #333232;
+}
+
+
+.blocProduitFP{
+    text-align: center;
+    padding-top: 29rem;
+}
+
+.imageFP{
+    width:317rem;
+    height:100%;
+    background-color: #414040;
+    margin-left: 29rem;
+    padding-top: 29rem;
+}
+
+.backgroundTitreFP{
+    width:317rem;
+    height:100%;
+    background: #414040;
+    margin-top: 29rem;
+    margin-left: 29rem;
+    font-size: 24rem;
+    font-family: Ubuntu, serif;
+    font-weight: 0.5;
+    color: #DDDDDD;
+}
+
+.titreFP{
+    padding-top: 5rem;
+}
+
+.descriptionFP{
+    width:317rem;
+    height:100%;
+    background: #414040;
+    margin-top: 29rem;
+    margin-left: 29rem;
+    font-size: 18rem;
+    font-family: Ubuntu, serif;
+    color: #DDDDDD;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    padding-left: 10rem;
+    text-align: left;
+}
+
+.priceFP{
+    width:145rem;
+    height:100%;
+    background: #414040;
+    margin-top: 29rem;
+    margin-left: 29rem;
+    font-size: 18rem;
+    font-family: Ubuntu, serif;
+    color: white;
+    padding:10rem 0rem;
+}
+
+
+.boutonFP{
+    font-family: Roboto, serif;
+    color: white;
+    font-size: 25rem;
+    width: 300rem;
+    height: 59rem;
+    background: #73E030;
+    border-radius: 20rem;
+    margin-top: 29rem;
+}
+
+.flexBoxFP{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 14rem;
+}
+
+.blocFP{
+
+    background-color: #414040;
+    width:153rem;
+    height:102rem;
+    margin: 15rem;
+}
+
+.texteFP{
+    font-family: ubuntu, serif;
+    font-size: 12rem;
+    color: white;
+    text-align: center;
+
+}
+
+.imageDroneFP{
+    text-align: center;
+}
+
+/* BackOffice */
+
+.backgroundBO{
+    background-color: #dddddd;
+}
+
+.textBO{
+    font-size: 20rem;
+}
+
+.buttonAdd{
+    background-color: #73e030;
+    margin-left: 20rem;
+    margin-top: 20rem;
+    width: 150rem;
+    height: 40rem;
+    border-radius: 10px;
+}
+
+table{
+    margin-top: 20rem;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Modification */
+
+.fondMO{
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.textMO{
+    font-size: 20rem;
+    font-family: Ubuntu , Serif;
+    padding-top: 20rem;
+}
+
+.buttonModifierMO{
+    font-size: 20rem;
+    font-family: Ubuntu , Serif;
+    background-color: #73e030;
+    border-radius: 10px;
+    margin-bottom: 20rem;
+    margin-top: 40rem;
+}
+
+.textRetourMO{
+    font-size: 20rem;
+    font-family: Ubuntu , Serif;
+    text-align: left;
+    padding: 20rem 0 0 20rem;
 }

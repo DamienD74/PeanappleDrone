@@ -1,11 +1,11 @@
 @extends('layout')
 @section('title')
-    Contact
+    Register
 @endsection
 
 @section('content')
 <div class="fondCO">
-    <form action="{{route('connection')}}" method="post">
+    <form action="{{route('registration')}}" method="post">
         {{ csrf_field() }}
         <div class="contourImageUtilisateurCO">
             <svg class="imageUtilisateurCO" width="131" height="124" viewBox="0 0 131 124" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,9 +15,30 @@
         </div>
         <div>
             <div class="textCO">
-                Nom d'utilisateur ou email
+                Prénom
             </div>
-            <input class="champText" type="text" id="userName" name="userName" required
+            <input class="champText" type="text" id="firstname" name="firstname" required
+                   minlength="1" maxlength="35" size="20">
+        </div>
+        <div>
+            <div class="textCO">
+                Nom
+            </div>
+            <input class="champText" type="text" id="name" name="name" required
+                   minlength="1" maxlength="35" size="20">
+        </div>
+        <div>
+            <div class="textCO">
+                Email
+            </div>
+            <input class="champText" type="text" id="email" name="email" required
+                   minlength="1" maxlength="35" size="20">
+        </div>
+        <div>
+            <div class="textCO">
+                Nom d'utilisateur
+            </div>
+            <input class="champText" type="text" id="username" name="username" required
                    minlength="1" maxlength="35" size="20">
         </div>
         <div>
@@ -32,7 +53,7 @@
         </div>
     </form>
     <div class="textCO newUserCO">
-        <a href="{{route('register')}}">Nouvelle utilisateur ?</a>
+        <a href="{{route('contact')}}">Connection ?</a>
     </div>
 </div>
 @endsection
