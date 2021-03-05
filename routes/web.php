@@ -27,11 +27,17 @@ Route::get('/product/{id}', [ProductsController::class, 'product'])->name("produ
 
 Route::get('/cart', [CartController::class, 'cart'])->name("cart");
 
+Route::get('/cart/addProduct/{id}', [CartController::class, 'addProduct'])->name("addProduct");
+
+Route::get('/cart/deleteProduct/{id}', [CartController::class, 'delete'])->name("deleteProduct");
+
 Route::post('/connection', [ContactController::class, 'connection'])->name("connection");
 
 Route::get('/contact', [ContactController::class, 'contact'])->name("contact");
 
 Route::get('/register', [ContactController::class, 'register'])->name("register");
+
+Route::post('/registration', [ContactController::class, 'registration'])->name("registration");
 
 Route::get('/backoffice', [BackofficeController::class, 'backoffice'])->name("backoffice");
 
@@ -41,6 +47,6 @@ Route::post('/backoffice/addAtTable', [BackofficeController::class, 'addAtTable'
 
 Route::get('/backoffice/modifier/{id}', [BackofficeController::class, 'modifier'])->name("modifier");
 
-Route::post('/backoffice/update/{id}', [BackofficeController::class, 'update']);
+Route::post('/backoffice/update/{id}', [BackofficeController::class, 'update'])->name("update");
 
 Route::get('/backoffice/delete/{id}', [BackofficeController::class, 'delete'])->name("delete");

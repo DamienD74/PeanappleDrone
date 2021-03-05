@@ -24,7 +24,7 @@ class backofficeController extends BaseController
 
     public function update($id, Request $request)
     {
-        $product = (new Product())->find($id);
+        $product = Product::find($id);
 
         $product->name = $request->input('name');
         $product->camera = $request->input('camera');
@@ -34,6 +34,7 @@ class backofficeController extends BaseController
         $product->price = $request->input('price');
         $product->description = $request->input('description');
         $product->image = $request->input('image');
+        $product->categorie_id = $request->input('categorie');
 
         $product->save();
 
@@ -59,6 +60,7 @@ class backofficeController extends BaseController
         $product->price = $request->input('price');
         $product->description = $request->input('description');
         $product->image = $request->input('image');
+        $product->categorie_id = $request->input('categorie');
 
         $product->save();
 

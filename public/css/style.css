@@ -650,6 +650,59 @@ html{
 
 /* BackOffice */
 
-.textBackOffce{
+.backgroundBO{
+    background-color: #dddddd;
+}
+
+.textBO{
     font-size: 20rem;
+}
+
+.buttonAdd{
+    background-color: #73e030;
+    margin-left: 20rem;
+    margin-top: 20rem;
+    width: 150rem;
+    height: 40rem;
+    border-radius: 10px;
+}
+
+table{
+    margin-top: 20rem;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* Modification */
+
+.fondMO{
+    background-color: #dddddd;
+    text-align: center;
+}
+
+.textMO{
+    font-size: 20rem;
+    font-family: Ubuntu , Serif;
+    padding-top: 20rem;
+}
+
+.buttonModifierMO{
+    font-size: 20rem;
+    font-family: Ubuntu , Serif;
+    background-color: #73e030;
+    border-radius: 10px;
+    margin-bottom: 20rem;
+    margin-top: 40rem;
+}
+
+.textRetourMO{
+    font-size: 20rem;
+    font-family: Ubuntu , Serif;
+    text-align: left;
+    padding: 20rem 0 0 20rem;
 }

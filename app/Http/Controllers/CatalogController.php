@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
 use App\Models\Product;
@@ -11,9 +10,17 @@ class CatalogController extends BaseController
 {
     public function catalog(Request $request)
     {
-        $allProducts = Product::all()
-        ->sortBy($request->query('sort'));
-
+        if($request->query('category') == null)
+        {
+            $allProducts = Product::all();
+        }
+        else
+        {
+            $allProducts = Product::whereHas('category', function($product) use ($request) {
+                $product->where('name', $request->query('category'));
+            })
+                ->get();
+        }
         return view('catalog', ['catalogs' => $allProducts]);
     }
 }

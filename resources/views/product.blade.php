@@ -8,7 +8,6 @@
             <div class="backgroundTitreFP">
                 <div class="titreFP">{{$product->name}}</div>
             </div>
-
             <div class="descriptionFP">
                 {{$product->camera}} <br>
                 {{$product->weight}}<br>
@@ -20,10 +19,7 @@
             <div class="priceFP">
                 {{$product->price}}
             </div>
-
-            <input class="boutonFP"
-                   type="button"
-                   value="Ajouter au panier">
+            <a href="{{url('cart/addProduct/'.$product->id)}}"><input class="boutonFP" type="button" value="Ajouter au panier"></a>
         </div>
 
         <div class="flexBoxFP">
