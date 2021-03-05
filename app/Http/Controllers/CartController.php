@@ -42,7 +42,7 @@ class CartController extends BaseController
             {
                 $quantity = Session::get($product->id.$idCustomer.'quantity');
 
-                $products = [$nb => ['product' => $product, 'quantity' => $quantity]];
+                $products[$nb] = ['product' => $product, 'quantity' => $quantity];
                 $nb += 1;
 
                 $totalPrice += ($product->price * $quantity);
@@ -93,7 +93,7 @@ class CartController extends BaseController
 
         if (Session::has($theProducts->id.$idCustomer.'product_id'))
         {
-            $quantity = Session::get($theProducts->id.$idCustomer.'product_id');
+            $quantity = Session::get($theProducts->id.$idCustomer.'quantity');
         }
         else
         {
