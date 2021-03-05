@@ -7,6 +7,7 @@ Panier
 
 @section('content')
 <main id="cart_main">
+    @if($cart[0]["product"] != null)
     @foreach ($cart as $product)
         <div class="cart_article">
             <div class="cart_content">
@@ -37,6 +38,7 @@ Panier
             </div>
         </div>
     @endforeach
+    @endif
     <div class="cart_article" id="cart_total">
         <div id="total_text">
             <h3>dfazfazfaz</h3>

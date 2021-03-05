@@ -10,20 +10,6 @@ use Illuminate\Support\Facades\Session;
 
 class CartController extends BaseController
 {
-    /*public function cart()
-    {
-        $carts = Cart::all();
-
-        $totalPrice = 0;
-
-        foreach($carts as $product)
-        {
-            $totalPrice += ($product->price * $product->quantity);
-        }
-
-        return view("cart", ['cart' => $carts, 'totalPrice' => $totalPrice]);
-    }*/
-
     public function cart()
     {
         $totalPrice = 0;
@@ -51,40 +37,6 @@ class CartController extends BaseController
         return view("cart", ['cart' => $products, 'totalPrice' => $totalPrice]);
     }
 
-    /*public function addProduct($id)
-    {
-        $theProducts = Product::find($id);
-
-        $carts = Cart::all();
-
-        foreach ($carts as $cart)
-        {
-            if ($cart->product_id == $theProducts->id)
-            {
-                $cart = Cart::firstWhere('product_id', $theProducts->id);
-                $cart->quantity += 1;
-                $cart->save();
-                return redirect(route('cart'));
-            }
-        }
-
-        $cart = new Cart();
-
-        $cart->name = $theProducts->name;
-        $cart->image = $theProducts->image;
-        $cart->camera = $theProducts->camera;
-        $cart->weight = $theProducts->weight;
-        $cart->flightTime = $theProducts->flightTime;
-        $cart->flightSpeed = $theProducts->flightSpeed;
-        $cart->price = $theProducts->price;
-        $cart->product_id = $theProducts->id;
-        $cart->quantity = 1;
-
-        $cart->save();
-
-        return redirect(route('cart'));
-    }*/
-
     public function addProduct($id)
     {
         $idCustomer = Session::get('id');
@@ -100,28 +52,11 @@ class CartController extends BaseController
             $quantity = 0;
         }
 
-        /*Session::put($theProducts->product_id.$idCustomer.'name', $theProducts->name);
-        Session::put($theProducts->product_id.$idCustomer.'image', $theProducts->image);
-        Session::put($theProducts->product_id.$idCustomer.'weight', $theProducts->weight);
-        Session::put($theProducts->product_id.$idCustomer .'flightTime', $theProducts->flightTime);
-        Session::put($theProducts->product_id.$idCustomer .'flightSpeed', $theProducts->flightSpeed);
-        Session::put($theProducts->product_id.$idCustomer .'price', $theProducts->price);*/
-
-
         Session::put($theProducts->id.$idCustomer.'product_id', $theProducts->id);
         Session::put($theProducts->id.$idCustomer.'quantity', $quantity += 1);
 
         return redirect(route('cart'));
     }
-
-    /*public function delete($id)
-    {
-        $product = Cart::find($id);
-
-        $product->delete();
-
-        return redirect(route('cart'));
-    }*/
 
     public function delete($id)
     {
