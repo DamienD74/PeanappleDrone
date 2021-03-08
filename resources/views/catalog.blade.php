@@ -5,7 +5,6 @@
 @section('content')
 
     <div class="RealbgCat">
-
         @foreach ($catalogs as $catalog)
             <div class="BgDivCat" >
                 <a href="{{url('product/'.$catalog->id)}}">
