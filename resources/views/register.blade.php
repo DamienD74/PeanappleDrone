@@ -5,7 +5,7 @@
 
 @section('content')
 <div class="fondCO">
-    <form action="{{route('registration')}}" method="post">
+    <form action="{{route('registration')}}" method="post"> <!-- Envoie a la vérification de d'inscription -->
         {{ csrf_field() }}
         <div class="contourImageUtilisateurCO">
             <svg class="imageUtilisateurCO" width="131" height="124" viewBox="0 0 131 124" fill="none" xmlns="http://www.w3.org/2000/svg">
