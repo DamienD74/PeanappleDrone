@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->char('flightSpeed' ,45);
             $table->Text('description');
             $table->float('price');
-            $table->string('picture');
+            $table->string('image');
             $table->integer('category_id');
             $table->timestamps();
 

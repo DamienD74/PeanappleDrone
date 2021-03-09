@@ -34,7 +34,7 @@ class backofficeController extends BaseController
         $product->price = $request->input('price');
         $product->description = $request->input('description');
         $product->image = $request->input('image');
-        $product->categorie_id = $request->input('categorie');
+        $product->category_id = $request->input('categorie');
 
         $product->save();
 
@@ -60,7 +60,7 @@ class backofficeController extends BaseController
         $product->price = $request->input('price');
         $product->description = $request->input('description');
         $product->image = $request->input('image');
-        $product->categorie_id = $request->input('categorie');
+        $product->category_id = $request->input('categorie');
 
         $product->save();
 
