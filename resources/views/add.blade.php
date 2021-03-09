@@ -54,8 +54,7 @@
                 <option value="">--Please choose an option--</option>
                 <option value="1">Pro</option>
                 <option value="2">Amateur</option>
-                <option value="3">Militaire</option>
-                <option value="4">Enfant</option>
+                <option value="3">Racing</option>
             </select>
             <div>
                 <button class="buttonModifierMO" type="submit">Ajouter</button>
