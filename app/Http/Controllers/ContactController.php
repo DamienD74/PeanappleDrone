@@ -19,7 +19,7 @@ class ContactController extends BaseController
 
         foreach ($allUsers as $user)
         {
-            if ($user->username == $request->input('userName') && $user->mdp == $request->input('mdp'))
+            if ($user->name == $request->input('userName') && $user->mdp == $request->input('mdp'))
             {
                 return redirect(route('backoffice'));
             }
