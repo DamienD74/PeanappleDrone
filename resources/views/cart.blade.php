@@ -12,7 +12,7 @@ Panier
                     <img alt="" src="dfssfsd"/>
                 </div>
                 <div class="article_description">
-                    <h2><a href=""</a></h2>
+                    <h2></h2>
                     camera<br>
                     poid<br>
                     temps vol<br>
@@ -34,14 +34,17 @@ Panier
                 </div>
             </div>
         </div>
-    @endforeach
+
     <div class="cart_article" id="cart_total">
         <div id="total_text">
             <h3>dfazfazfaz</h3>
             <h3>razrfazazfa</h3>
             <h2>total</h2>
         </div>
-        <input type="button" value="Passer la commande">
+        <form action="{{ route('addorder') }}" method="get">
+        <input type="submit" value="Passer la commande">
+        </form>
     </div>
+
 </main>
 @endsection

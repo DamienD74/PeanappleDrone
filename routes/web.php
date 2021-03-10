@@ -27,9 +27,7 @@ Route::get('/product/{id}', [ProductsController::class, 'product'])->name("produ
 
 Route::get('/cart', [CartController::class, 'cart'])->name("cart");
 
-Route::get('/cart/addProduct/{id}', [CartController::class, 'addProduct'])->name("addProduct");
-
-Route::get('/cart/deleteProduct/{id}', [CartController::class, 'delete'])->name("deleteProduct");
+Route::get('/cart/validatecart', [CartController::class, 'add'])->name("addorder");
 
 Route::post('/connection', [ContactController::class, 'connection'])->name("connection");
 
@@ -50,3 +48,4 @@ Route::get('/backoffice/modifier/{id}', [BackofficeController::class, 'modifier'
 Route::post('/backoffice/update/{id}', [BackofficeController::class, 'update'])->name("update");
 
 Route::get('/backoffice/delete/{id}', [BackofficeController::class, 'delete'])->name("delete");
+
