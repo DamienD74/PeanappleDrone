@@ -4,6 +4,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\OrdersProduct;
 use App\Models\Product;
 use App\Models\Order;
 use Illuminate\Routing\Controller as BaseController;
@@ -15,21 +16,37 @@ class CartController extends BaseController
 
     public function cart()
     {
-        Session::add('id1', 1);
-        Session::add('quantity1', 10);
-        Session::add('id2', 2);
-        Session::add('quantity2', 12);
-        Session::add('id3', 3);
-        Session::add('quantity3', 15);
+
+        Session::put('id', 1);
+        Session::put('quantity1', 10);
+        Session::put('id2', 2);
+        Session::put('quantity2', 12);
+        Session::put('id3', 3);
+        Session::put('quantity3', 15);
 
         return view('cart');
     }
 
     public function add(Request $request)
     {
-        Order::create($request->all());
-        Order
+        $order = Order::create($request->all());
+
+        $products = Product::all();
+
+        foreach ($products as $product)
+        {
+            $prodRow = new OrdersProduct();
+            $prodRow->product_id = $product->id;
+            $prodRow->order_id = $order->id;
+
+            dd($prodRow);
+        }
+
         return redirect()->route('home');
+
+
+
+
 
     }
    /* public function validateCart()
