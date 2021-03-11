@@ -19,7 +19,7 @@
             <div class="priceFP">
                 {{$product->price}}
             </div>
-            <a href="{{url('cart/addProduct/'.$product->id)}}"><input class="boutonFP" type="button" value="Ajouter au panier"></a>
+            <a href="{{url('/cart/add/'.$product->id)}}"><input class="boutonFP" type="button" value="Ajouter au panier"></a>
         </div>
 
         <div class="flexBoxFP">

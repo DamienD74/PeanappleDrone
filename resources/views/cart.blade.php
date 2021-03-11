@@ -7,16 +7,16 @@ Panier
 
 <main id="cart_main">
         <div class="cart_article">
+            @if(isset($product))
             <div class="cart_content">
                 <div class="article_image">
                     <img alt="" src="dfssfsd"/>
                 </div>
                 <div class="article_description">
-                    <h2><a href=""</a></h2>
-                    camera<br>
-                    poid<br>
-                    temps vol<br>
-                    vitesse vol<br>
+                    camera {{$product->camera}} <br>
+                    poids {{$product->weight}}<br>
+                    temps vol {{$product->flightTime}}<br>
+                    vitesse vol {{$product->flightSpeed}}<br><br>
                 </div>
             </div>
             <div class="cart_content">
@@ -24,8 +24,7 @@ Panier
                     <input type="number" value="0" min="0" max="50">
                 </div>
                 <div class="price">
-                    <h1>Prix :</h1>
-                    <h2>100$</h2>
+                    <h1>Prix : {{$product->price}}</h1>
                     <a href="" class="trash">
                         <svg  width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.4615 2.25H11.0769V1.6875C11.0769 0.755508 10.2504 0 9.23077 0H6.76923C5.74962 0 4.92308 0.755508 4.92308 1.6875V2.25H1.53846C0.688808 2.25 0 2.87961 0 3.65625V4.78125C0 5.09193 0.2755 5.34375 0.615385 5.34375H15.3846C15.7245 5.34375 16 5.09193 16 4.78125V3.65625C16 2.87961 15.3112 2.25 14.4615 2.25ZM6.15385 1.6875C6.15385 1.37742 6.43 1.125 6.76923 1.125H9.23077C9.57 1.125 9.84615 1.37742 9.84615 1.6875V2.25H6.15385V1.6875Z" fill="white"/>
@@ -34,11 +33,9 @@ Panier
                 </div>
             </div>
         </div>
-    @endforeach
+    @endif
     <div class="cart_article" id="cart_total">
         <div id="total_text">
-            <h3>dfazfazfaz</h3>
-            <h3>razrfazazfa</h3>
             <h2>total</h2>
         </div>
         <input type="button" value="Passer la commande">

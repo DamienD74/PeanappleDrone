@@ -27,7 +27,7 @@ Route::get('/product/{id}', [ProductsController::class, 'product'])->name("produ
 
 Route::get('/cart', [CartController::class, 'cart'])->name("cart");
 
-Route::get('/cart/addProduct/{id}', [CartController::class, 'addProduct'])->name("addProduct");
+Route::get('/cart/add/{id}', [CartController::class, 'addSession'])->name("addSession");
 
 Route::get('/cart/deleteProduct/{id}', [CartController::class, 'delete'])->name("deleteProduct");
 
