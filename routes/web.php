@@ -49,3 +49,6 @@ Route::post('/backoffice/update/{id}', [BackofficeController::class, 'update'])-
 
 Route::get('/backoffice/delete/{id}', [BackofficeController::class, 'delete'])->name("delete");
 
+Route::get('/backoffice/orderproduct{id}', [BackofficeController::class,'displayOrderProduct'])->name('displayOrderProduct');
+
+Route::get('/backoffice/orders', [BackofficeController::class,'displayOrder'])->name('displayOrder');

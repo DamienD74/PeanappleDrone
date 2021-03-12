@@ -16,14 +16,12 @@ class CartController extends BaseController
 
     public function cart()
     {
-
-        Session::put('id', 1);
+        Session::put('id1', 1);
         Session::put('quantity1', 10);
         Session::put('id2', 2);
         Session::put('quantity2', 12);
         Session::put('id3', 3);
         Session::put('quantity3', 15);
-
         return view('cart');
     }
 
@@ -35,19 +33,20 @@ class CartController extends BaseController
 
         foreach ($products as $product)
         {
-            $prodRow = new OrdersProduct();
-            $prodRow->product_id = $product->id;
-            $prodRow->order_id = $order->id;
+            if (Session::has('id'.$product->id)) {
 
-            dd($prodRow);
+                $prodRow = new OrdersProduct();
+                $prodRow->product_id = $product->id;
+                $prodRow->order_id = $order->id;
+                $prodRow->quantity_products = Session::get('quantity' . $product->id);
+
+                $prodRow->save();
+            }
         }
 
+        Session::flush();
+
         return redirect()->route('home');
-
-
-
-
-
     }
    /* public function validateCart()
     {
