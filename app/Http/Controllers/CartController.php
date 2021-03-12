@@ -11,26 +11,17 @@ use Illuminate\Support\Facades\Session;
 
 class CartController extends BaseController
 {
-    public function addSession(Request $request) {
-
-        if (session()->has('id'.$request->input('id'))) {
-//            $quantity = session('quantity'.$request->input('id'));
-//            $quantity += 1;
-//            Session::put('quantity'.$request->input('id'), $quantity);
-           // Problème de calcul (mié au put ?)
-        }
-        else
-        {
-            Session::push('id'.$request->input('id'),$request->input('id'));
-            Session::push('quantity'.$request->input('id'), 1);
-        }
-
-        dd(session('quantity'.$request->input('id')));
-  return redirect(route('cart'));
-    }
-
-    public function cart()
+    public function getCartSession(Product $product)
     {
-        return view('cart');
+        $products = session()->get("cart");
+        $products_details = [
+            'id' => $product->id,
+            'price' => $product->price,
+            'quantity' => $product->quantity,
+        ];
+        $products[$product->id] = $products_details;
+        session()->put("cart", $products);
+        //dd(session()->all());
     }
+
 }

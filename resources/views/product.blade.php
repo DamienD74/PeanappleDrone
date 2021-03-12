@@ -19,7 +19,11 @@
             <div class="priceFP">
                 {{$product->price}}
             </div>
-            <a href="{{url('/cart/add/'.$product->id)}}"><input class="boutonFP" type="button" value="Ajouter au panier"></a>
+            <form action="{{route('session')}}" method="post">
+
+                @csrf
+                <button type="submit" class="active">Ajouter au panier</button>
+            </form>
         </div>
 
         <div class="flexBoxFP">
