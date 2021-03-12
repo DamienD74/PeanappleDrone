@@ -44,7 +44,7 @@ Panier
         <div id="total_text">
             <h3>dfazfazfaz</h3>
             <h3>razrfazazfa</h3>
-            <h2>total</h2>
+            <h2>{{$totalPrice}}</h2>
         </div>
         <form action="{{ route('addorder') }}" method="get">
         <input type="submit" value="Passer la commande">

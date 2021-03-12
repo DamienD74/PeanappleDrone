@@ -38,22 +38,29 @@ class CartController extends BaseController
         return view("cart", ['cart' => $products, 'totalPrice' => $totalPrice]);
     }
 
-    public function add(Request $request)
+    public function add()
     {
-        $order = Order::create($request->all());
+        $idCustomer = Session::get('id');
+
+        $order = new Order();
+
+        $order->save();
 
         $products = Product::all();
 
         foreach ($products as $product)
         {
-            if (Session::has('id'.$product->id)) {
+            if (Session::has($product->id.$idCustomer.'product_id')) {
 
                 $prodRow = new OrdersProduct();
                 $prodRow->product_id = $product->id;
                 $prodRow->order_id = $order->id;
-                $prodRow->quantity_products = Session::get('quantity' . $product->id);
+                $prodRow->quantity_products = Session::get($product->id.$idCustomer.'quantity');
 
                 $prodRow->save();
+
+                Session::forget($product->id.$idCustomer.'product_id');
+                Session::forget($product->id.$idCustomer.'quantity');
             }
         }
 
