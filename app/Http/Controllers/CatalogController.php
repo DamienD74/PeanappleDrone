@@ -12,10 +12,12 @@ class CatalogController extends BaseController
     public function catalog()
     {
         $allProducts = Product::all();
-            return view('catalog', ['catalogs' => $allProducts,]);
+        return view('catalog', ['catalogs' => $allProducts,]);
     }
+
     public function filter($id)
     {
         $allProducts = Category::find($id)->products;
         return view('/catalog', ['catalogs' => $allProducts]);
     }
+}

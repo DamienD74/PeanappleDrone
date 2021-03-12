@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AddFormRequest;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Validator;
 
 class backofficeController extends BaseController
 {
@@ -50,6 +52,17 @@ class backofficeController extends BaseController
 
     public function addAtTable(Request $request)
     {
+        $validator = $request->validate([
+        'name' => 'required|between:5,30',
+            'camera' => 'required',
+            'weight' => 'required',
+            'flightTime' => 'required',
+            'flightSpeed' => 'required',
+            'price' => 'required|digits_between:1,99999',
+            'description' => 'required|between:5,100',
+            'image' => 'required',
+        ]);
+
         $product = new Product();
 
         $product->name = $request->input('name');

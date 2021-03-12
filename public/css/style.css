@@ -706,3 +706,10 @@ th, td{
     text-align: left;
     padding: 20rem 0 0 20rem;
 }
+.error {
+    color: red;
+    font-weight: 400;
+    display: block;
+    padding: 6px 0;
+    font-size: 14px;
+}
