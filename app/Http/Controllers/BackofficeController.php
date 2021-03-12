@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Order;
+use App\Models\Ordersproduct;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 
@@ -74,5 +76,18 @@ class backofficeController extends BaseController
         $products->delete();
 
         return redirect(route('backoffice'));
+    }
+
+    public function displayOrder()
+    {
+        $orders = Order::all();
+        return view('orderlist', ['orders' => $orders]);
+    }
+
+    public function displayOrderProducts()
+    {
+        $listorders = Ordersproduct::find('order_id');
+
+        return view('orderproductslist', ['listorders' => $listorders]);
     }
 }

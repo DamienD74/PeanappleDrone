@@ -52,10 +52,9 @@
                    minlength="1" maxlength="35" size="20">
             <select name="categorie" id="categorie">
                 <option value="">--Please choose an option--</option>
-                <option value="1" {{$product->categorie_id == 1 ? "selected":""}}>Pro</option>
-                <option value="2" {{$product->categorie_id == 2 ? "selected":""}}>Amateur</option>
-                <option value="3" {{$product->categorie_id == 3 ? "selected":""}}>Militaire</option>
-                <option value="4" {{$product->categorie_id == 4 ? "selected":""}}>Enfant</option>
+                <option value="1">Pro</option>
+                <option value="2">Amateur</option>
+                <option value="3">Racing</option>
             </select>
             <div>
                 <button class="buttonModifierMO" type="submit">Modifier</button>

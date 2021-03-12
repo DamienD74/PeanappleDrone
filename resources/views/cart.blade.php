@@ -46,7 +46,9 @@ Panier
             <h3>razrfazazfa</h3>
             <h2>total</h2>
         </div>
-        <input type="button" value="Passer la commande">
+        <form action="{{ route('addorder') }}" method="get">
+        <input type="submit" value="Passer la commande">
+        </form>
     </div>
 </main>
 @endsection

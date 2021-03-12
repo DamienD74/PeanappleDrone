@@ -28,9 +28,7 @@ Route::get('/product/{id}', [ProductsController::class, 'product'])->name("produ
 
 Route::get('/cart', [CartController::class, 'cart'])->name("cart");
 
-Route::get('/cart/addProduct/{id}', [CartController::class, 'addProduct'])->name("addProduct");
-
-Route::get('/cart/deleteProduct/{id}', [CartController::class, 'delete'])->name("deleteProduct");
+Route::get('/cart/validatecart', [CartController::class, 'add'])->name("addorder");
 
 Route::post('/connection', [ContactController::class, 'connection'])->name("connection");
 
@@ -62,5 +60,7 @@ Route::group(array('prefix' => '/api'),function ()
     Route::get('/addProduct', [ProductController::class, 'addProduct'])->name('ApiAddProduct');
     Route::get('/updateProduct/{id}', [ProductController::class, 'updateProduct'])->name('ApiUpdateProduct');
     Route::get('/deleteProduct/{id}', [ProductController::class, 'deleteProduct'])->name('ApiDeleteProduct');
+  Route::get('/delete/{id}', [BackofficeController::class, 'delete'])->name("delete");
+Route::get('/orderproduct{id}', [BackofficeController::class,'displayOrderProduct'])->name('displayOrderProduct');
+Route::get('/orders', [BackofficeController::class,'displayOrder'])->name('displayOrder');
 });
-
