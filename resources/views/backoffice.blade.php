@@ -8,6 +8,10 @@
     <div class="backgroundBO">
         <button class="buttonAdd textBO"
                 type="button">
+            <a href="{{route('displayOrder')}}">Commande</a>
+        </button>
+        <button class="buttonAdd textBO"
+                type="button">
             <a href="{{route('add')}}">Ajouter</a>
         </button>
         <table class="textBO">

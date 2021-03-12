@@ -3,7 +3,10 @@
     Backoffice
     @endsection
     @section('content')
-
+        <button class="buttonAdd textBO"
+                type="button">
+            <a href="{{route('backoffice')}}">Retour</a>
+        </button>
         <table class="table backgroundBO textBO">
             <thead>
             <tr>
