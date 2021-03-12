@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Api\ProductController;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ProductsController;
@@ -37,18 +38,29 @@ Route::get('/register', [ContactController::class, 'register'])->name("register"
 
 Route::post('/registration', [ContactController::class, 'registration'])->name("registration");
 
-Route::get('/backoffice', [BackofficeController::class, 'backoffice'])->name("backoffice");
+Route::group(array('prefix' => '/backoffice'),function ()
+{
+    Route::get('', [BackofficeController::class, 'backoffice'])->name("backoffice");
 
-Route::get('/backoffice/add', [BackofficeController::class, 'add'])->name("add");
+    Route::get('/add', [BackofficeController::class, 'add'])->name("add");
 
-Route::post('/backoffice/addAtTable', [BackofficeController::class, 'addAtTable'])->name("addAtTable");
+    Route::post('/addAtTable', [BackofficeController::class, 'addAtTable'])->name("addAtTable");
 
-Route::get('/backoffice/modifier/{id}', [BackofficeController::class, 'modifier'])->name("modifier");
+    Route::get('/modifier/{id}', [BackofficeController::class, 'modifier'])->name("modifier");
 
-Route::post('/backoffice/update/{id}', [BackofficeController::class, 'update'])->name("update");
+    Route::post('/update/{id}', [BackofficeController::class, 'update'])->name("update");
 
-Route::get('/backoffice/delete/{id}', [BackofficeController::class, 'delete'])->name("delete");
+    Route::get('/delete/{id}', [BackofficeController::class, 'delete'])->name("delete");
+});
 
-Route::get('/backoffice/orderproduct{id}', [BackofficeController::class,'displayOrderProduct'])->name('displayOrderProduct');
-
-Route::get('/backoffice/orders', [BackofficeController::class,'displayOrder'])->name('displayOrder');
+Route::group(array('prefix' => '/api'),function ()
+{
+    Route::get('/product', [ProductController::class, 'showProducts'])->name('ApiShowProducts');
+    Route::get('/product/{id}', [ProductController::class, 'showProduct'])->name('ApiShowProduct');
+    Route::get('/addProduct', [ProductController::class, 'addProduct'])->name('ApiAddProduct');
+    Route::get('/updateProduct/{id}', [ProductController::class, 'updateProduct'])->name('ApiUpdateProduct');
+    Route::get('/deleteProduct/{id}', [ProductController::class, 'deleteProduct'])->name('ApiDeleteProduct');
+  Route::get('/delete/{id}', [BackofficeController::class, 'delete'])->name("delete");
+Route::get('/orderproduct{id}', [BackofficeController::class,'displayOrderProduct'])->name('displayOrderProduct');
+Route::get('/orders', [BackofficeController::class,'displayOrder'])->name('displayOrder');
+});
