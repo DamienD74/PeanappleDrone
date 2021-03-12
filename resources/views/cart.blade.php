@@ -3,6 +3,7 @@
 Panier
 @endsection
 
+@section('content')
 
 
 @section('content')
@@ -12,7 +13,7 @@ Panier
         <div class="cart_article">
             <div class="cart_content">
                 <div class="article_image">
-                    <img alt="" src="{{asset($product["product"]->image)}}"/>
+                    <img alt="" src="dfssfsd"/>
                 </div>
                 <div class="article_description">
                     <h2><a href="{{url('product/'.$product["product"]->id)}}">{{$product["product"]->name}}</a></h2>
@@ -43,7 +44,7 @@ Panier
         <div id="total_text">
             <h3>dfazfazfaz</h3>
             <h3>razrfazazfa</h3>
-            <h2>{{$totalPrice}}</h2>
+            <h2>total</h2>
         </div>
         <input type="button" value="Passer la commande">
     </div>
