@@ -7,8 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Category extends Model
 {
-    public function product(){
-        return $this->hasMany('app\Models\Product');
+    public function products()
+    {
+        return $this->hasMany('App\Models\Product');
     }
     use HasFactory;
+
 }

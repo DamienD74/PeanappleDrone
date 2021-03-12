@@ -22,6 +22,9 @@ use App\Http\Controllers\BackofficeController;
 Route::get('/', [HomeController::class, 'home'])->name("home");
 
 Route::get('/catalog', [CatalogController::class, 'catalog'])->name("catalog");
+Route::get('/catalog/{id}', [CatalogController::class, 'filter'])->name("catalog.");
+//Route::get('/catalog/Amateur', [CatalogController::class, 'category_id'])->name("category_id");
+//Route::get('/catalog/Racing', [CatalogController::class, 'category_id'])->name("category_id");
 
 Route::get('/product/{id}', [ProductsController::class, 'product'])->name("product");
 

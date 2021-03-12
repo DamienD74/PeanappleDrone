@@ -2,25 +2,20 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
 
 class CatalogController extends BaseController
 {
-    public function catalog(Request $request)
+    public function catalog()
     {
-        if($request->query('category') == null)
-        {
-            $allProducts = Product::all();
-        }
-        else
-        {
-            $allProducts = Product::whereHas('category', function($product) use ($request) {
-                $product->where('name', $request->query('category'));
-            })
-                ->get();
-        }
-        return view('catalog', ['catalogs' => $allProducts]);
+        $allProducts = Product::all();
+            return view('catalog', ['catalogs' => $allProducts,]);
     }
-}
+    public function filter($id)
+    {
+        $allProducts = Category::find($id)->products;
+        return view('/catalog', ['catalogs' => $allProducts]);
+    }
