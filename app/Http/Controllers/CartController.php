@@ -16,12 +16,7 @@ class CartController extends BaseController
 
     public function cart()
     {
-        Session::put('id1', 1);
-        Session::put('quantity1', 10);
-        Session::put('id2', 2);
-        Session::put('quantity2', 12);
-        Session::put('id3', 3);
-        Session::put('quantity3', 15);
+
         return view('cart');
     }
 
